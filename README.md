@@ -4,8 +4,8 @@ https://github.com/pgphil86
 ```
 ![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ### Languages:
-### I. [Русский язык.]()
-### II. [English language.]()
+### I. [Русский язык.](https://github.com/pgphil86/QRkot_spreadsheets?tab=readme-ov-file#i-проект-qrkot_spreadsheets)
+### II. [English language.](https://github.com/pgphil86/QRkot_spreadsheets?tab=readme-ov-file#i-the-qrkot_spreadsheets-project)
 ## I. Проект 'QRKot_spreadsheets'.
 
 ### Описание проекта.
@@ -63,7 +63,7 @@ EMAIL=YOUR_EMAIL
 uvicorn app.main:app --reload
 ```
 
-[Вверх.]()
+[Вверх.](https://github.com/pgphil86/QRkot_spreadsheets?tab=readme-ov-file#qrkot_spreadsheets-created-by-pavel)
 
 ## I. The 'QRKot_spreadsheets' project.
 
@@ -122,4 +122,4 @@ The project can be run:
 uvicorn app.main:app --reload
 ```
 
-[Up.]()
+[Up.](https://github.com/pgphil86/QRkot_spreadsheets?tab=readme-ov-file#qrkot_spreadsheets-created-by-pavel)
