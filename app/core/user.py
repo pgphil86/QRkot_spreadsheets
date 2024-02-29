@@ -1,5 +1,4 @@
 import logging
-
 from logging.handlers import RotatingFileHandler
 from typing import Optional, Union
 

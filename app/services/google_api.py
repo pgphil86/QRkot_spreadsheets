@@ -3,7 +3,7 @@ from datetime import datetime
 from aiogoogle import Aiogoogle
 
 from app.core.config import settings
-from app.variables import FORMAT
+from app.variables import COLUMN_COUNT, FORMAT, ROW_COUNT
 
 
 async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
@@ -15,14 +15,13 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
         'sheets': [{'properties': {'sheetType': 'GRID',
                                    'sheetId': 0,
                                    'title': 'Лист1',
-                                   'gridProperties': {'rowCount': 100,
-                                                      'columnCount': 11}}}]
+                                   'gridProperties': {'rowCount': ROW_COUNT,
+                                                      'columnCount': COLUMN_COUNT}}}]
     }
     response = await wrapper_services.as_service_account(
         service.spreadsheets.create(json=spreadsheet_body)
     )
-    spreadsheet_id = response['spreadsheetId']
-    return spreadsheet_id
+    return response['spreadsheetId']
 
 
 async def set_user_permissions(
@@ -37,7 +36,7 @@ async def set_user_permissions(
         service.permissions.create(
             fileId=spreadsheetid,
             json=permissions_body,
-            fields="id"
+            fields='id'
         ))
 
 
